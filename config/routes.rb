@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   end
 
-  # get "/", to: "home#index"
+  get "/", to: "home#index"
   get "/search", to: "books#search"
   get "/search/results", to: "books#results"
   get "/party", to: "books#party"
