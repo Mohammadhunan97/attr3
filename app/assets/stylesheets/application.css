@@ -23,13 +23,12 @@ body{
 }
 
 footer {
-  background: rgb(99, 0, 72);
+  background: rgba(99, 0, 72, 1);
   color: #fff;
   padding: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  opacity: 0.5;
 }
 
 footer ul {
@@ -37,7 +36,7 @@ footer ul {
 }
 
 footer a {
-  color: #ccc;
+  color: white;
   text-decoration: none;
 }
 
@@ -71,6 +70,11 @@ footer div.copy_info {
 }
 .mybooks{
     margin-left: 30vw;
+}
+.apilist {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  background: rgba(180,180,180, .5)
 }
 #bookshelf {
   margin-top: 5vw;
@@ -115,13 +119,13 @@ footer div.copy_info {
   font-family: 'Nova Flat', cursive;
   color: rgba(231, 76, 60, 1);
   text-align: center;
-  text-shadow: 2px 2px 3px darkred;
+  text-shadow: 4px 4px 4px #610003;
 }
 
 .alert,.notice{
    display: inline;
    text-align: center;
-   margin-left:20vw;
+   margin-left: 20vw;
  }
  body{
    margin: 0px;
@@ -140,7 +144,7 @@ footer div.copy_info {
    position: relative;
    top: 2vh;
    font-size: 1.7em;
-   margin-left:5vw;
+   margin-left: 5vw;
  }
  .navitem a{
    text-decoration: none;
