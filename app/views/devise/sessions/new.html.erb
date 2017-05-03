@@ -14,17 +14,17 @@
       <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "users"}) do |f| %>
 
         <div class="logsign">
-        <h2 class="login pagelogin">Login</h2>
-        <h2 class="signup pagesignup">Sign Up</h2>
+          <h2 class="login pagelogin">Login</h2>
+          <h2 class="signup pagesignup">Sign Up</h2>
         </div>
 
         <div class="field">
            <div class="signup_text"><%= f.label :email %><br /></div>
            <%= f.email_field :email, class: 'username', autofocus: true %>
-          </div>
+        </div>
 
           <div class="field">
-           <div class="signup_text"><%= f.label :password %><br /></div>
+             <div class="signup_text"><%= f.label :password %><br/></div>
              <%= f.password_field :password, class: 'password',  autocomplete: "off" %>
           </div>
 
@@ -39,7 +39,10 @@
            <div class="signup_text"><%= f.submit "Log in", class: 'submit'%></div>
         </div>
       <% end %>
-      <strong><div class="signup_text forgot_password"><%= render "devise/shared/links" %></strong></div>
+      <strong>
+        <div class="signup_text forgot_password"><%= render "devise/shared/links" %></div>
+        </strong>
+        
     </div>
 
     <script>
